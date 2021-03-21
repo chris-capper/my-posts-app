@@ -1,0 +1,45 @@
+$primary-color: dodgerblue;
+
+.container {
+  min-height: 100vh;
+  padding: 0 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.main {
+  padding: 5rem 0;
+  max-width: 800px;
+}
+
+.title {
+  margin: 0;
+  line-height: 1.15;
+  font-size: 3rem;
+  text-align: center;
+}
+
+.posts {
+  list-style: none;
+  padding: 0;
+  margin: 5em 0;
+  // only applies to direct descendents of the 'post' class with the <li> tag
+  & > li {
+    margin-bottom: 3em;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  p {
+    &:first-child {
+      margin-top: 0;
+    }
+    &:last-child {
+      margin-top: 0;
+    }
+  }
+  
+}
